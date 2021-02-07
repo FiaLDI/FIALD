@@ -1,8 +1,6 @@
-# Задаём функцию
+# We define a function that calculates all the divisors of a number and returns a list
 def delet(x):
-    # Создаём список с 1 и x
     lst = [1, x]
-    # Добавление в список чисел в ранже от 2 до квадратного корня заданного числа
     for i in range(2, 1 + int(x ** 0.5)):
         if x % i == 0:
             lst.extend({x // i, i})
@@ -15,7 +13,7 @@ print(delet(x))
 print(delet(y))
 
 
-#  Создаёт функцию которая из полученных списков создаёт множество и считает их пересечение
+#  Create a function that creates a set from the resulting lists and calculates their intersection
 def obp(x, y):
     a = set(delet(x))
     b = set(delet(y))
