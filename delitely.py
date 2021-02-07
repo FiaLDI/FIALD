@@ -7,10 +7,10 @@ def delet(x):
     return sorted(lst)
 
 
-x = int(input("Введите первое число: "))
-y = int(input("Введите второе число: "))
-print(delet(x))
-print(delet(y))
+x = int(input("Enter the first number: "))
+y = int(input("Enter the second number : "))
+print("First number divisors  -",delet(x))
+print("Second number divisors  -",delet(y))
 
 
 #  Create a function that creates a set from the resulting lists and calculates their intersection
@@ -18,7 +18,7 @@ def obp(x, y):
     a = set(delet(x))
     b = set(delet(y))
     c = b.intersection(a)
-    print(c)
+    return c
 
 
-print(obp(x, y))
+print("Common divisors -",obp(x, y))
