@@ -1,5 +1,6 @@
 # A program that creates sets and performs some operations on them
 
+
 # Create a list using the input method
 def setlist(a):
     '''Enters numbers into the list,
@@ -29,12 +30,14 @@ def unio(a, b):
     ar = d.union(c)
     print(ar)
 
+
 # Function (-) - Computing not union of sets
 def diiffer(a, b):
     d = set(a)
     c = set(b)
     ar = d.difference(c)
     print(ar)
+
 
 # Еmpty lists
 b = []
