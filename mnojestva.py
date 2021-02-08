@@ -1,19 +1,20 @@
-from typing import List, Any
+# A program that creates sets and performs some operations on them
 
-
+# Create a list using the input method
 def setlist(a):
-    '''Вводит числа в список,
-для того чтобы закончить
-ввод - напишите любой символ отличный от цифры'''
+    '''Enters numbers into the list,
+in order to complete the input -
+write any character other than a digit '''
     try:
-        print("Введите числа списка")
+        print("Enter list numbers ")
         while True:
-            x = int(input("Ввод: "))
+            x = int(input("Input: "))
             a.append(x)
     except:
-        print("Список создан:", a)
+        print("List created :", a)
 
 
+# Function (&) - Computing the intersection of sets
 def intersept(a, b):
     d = set(a)
     c = set(b)
@@ -21,33 +22,39 @@ def intersept(a, b):
     print(ar)
 
 
+# Function (|) - Computing union of sets
 def unio(a, b):
     d = set(a)
     c = set(b)
     ar = d.union(c)
     print(ar)
 
-
+# Function (-) - Computing not union of sets
 def diiffer(a, b):
     d = set(a)
     c = set(b)
     ar = d.difference(c)
     print(ar)
 
-
+# Еmpty lists
 b = []
 c = []
-run = False
 
-start = str(input("Запусите программу командой старт - "))
+
+# The loop that runs the program
+# Turns lists into sets
+# Does operations with them:
+# intersection, union, difference
+run = False
+start = str(input("Start the program with the (start) command  - "))
 if start == "старт" or start == "start":
     run = True
-    print("Запускается.")
+    print("Starts up...")
     print(setlist.__doc__)
 while run:
     setlist(b)
     setlist(c)
-    usl = input("Введите операцию - [& , |, -] - ")
+    usl = input("Enter operation - [& , |, -] - ")
     if usl == "&":
         intersept(b, c)
         run = False
