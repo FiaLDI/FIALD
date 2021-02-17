@@ -13,7 +13,7 @@ print("First number divisors  -",delet(x))
 print("Second number divisors  -",delet(y))
 
 
-#  Create a function that creates a set from the resulting lists and calculates their intersection
+# Create a function that creates a set from the resulting lists and calculates their intersection
 def obp(x, y):
     a = set(delet(x))
     b = set(delet(y))

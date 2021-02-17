@@ -1,19 +1,19 @@
 from math import sqrt
 
 
-#Function dictionary
-sluchai = {"1": "Linear equations of the form  ax+b=0",
-           "2": "Quadratic equations of the form  ax**2+bx+c= 0",
-           "3": "Logarithmic equations solved by definition "}
+# Function dictionary
+sluchai = {"1": "Linear equations of the form ax+b=0",
+           "2": "Quadratic equations of the form ax**2+bx+c= 0",
+           "3": "Logarithmic equations solved by definition"}
 
 
-#Solving Equations (1)
+# Solving Equations (1)
 def linaxb(a, b):
     x = -b / a
     print("Resolve: ", x)
 
 
-#Solving Equations (2)
+# Solving Equations (2)
 def kvadrat(a, b, c):
     D = b ** 2 - 4 * a * c
     print("Discriminant :", D)
@@ -23,7 +23,7 @@ def kvadrat(a, b, c):
     print("Root of the equation 2 -", x2)
 
 
-#Solving Equations (3)
+# Solving Equations (3)
 def logar(a, b):
     x = a ** b
     if x > 0 and a > 1 and a != 1:
@@ -31,7 +31,7 @@ def logar(a, b):
     else:
         print("It is impossible ")
 
-#Loop Solving Equation
+# Loop Solving Equation
 run=True
 while run:
     znachenie = int(input("Enter operation: "))

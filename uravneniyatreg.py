@@ -52,7 +52,7 @@ def uravntg(b):
 
 
 
-#Loop Solving Equation
+# Loop Solving Equation
 runing = True
 while runing:
     try:
